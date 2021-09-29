@@ -32,6 +32,9 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/hello','SelamatDatang::hal_awal');
+$routes->get('/login', 'SelamatDatang::beranda_login');
+$routes->get('/daftar-member','SelamatDatang::daftar_member');
 
 /*
  * --------------------------------------------------------------------
@@ -46,6 +49,4 @@ $routes->get('/', 'Home::index');
  * You will have access to the $routes object within that file without
  * needing to reload it.
  */
-if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
-}
+
