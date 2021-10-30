@@ -30,7 +30,7 @@ class Database extends Config
      *
      * @var array
      */
-    public $koneksiku = [
+     public $koneksiku = [
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',

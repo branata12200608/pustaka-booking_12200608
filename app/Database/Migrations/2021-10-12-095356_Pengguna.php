@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Pengguna extends Migration
+class namespacePengguna extends Migration
 {
     public function up()
     {
@@ -24,11 +24,11 @@ class Pengguna extends Migration
             ]
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('pengguna');
+        $this->forge->createTable('pengguna_12200608');
     }
 
     public function down()
     {
-        $this->forge->droptable('pengguna');
+        $this->forge->droptable('pengguna_12200608');
     }
 }
