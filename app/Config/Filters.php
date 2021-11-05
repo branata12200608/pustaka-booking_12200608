@@ -2,6 +2,10 @@
 
 namespace Config;
 
+use App\Filters\Auth;
+use App\Filters\AutoIn;
+use App\Filters\AutoLogin;
+
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
